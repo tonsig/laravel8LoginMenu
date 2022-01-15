@@ -6,3 +6,7 @@ Projeto pessoal de pesquisa e aprendizado, criando um contexto inicial de sistem
 
 3) Menu dinâmico, de acordo com os direitos de acesso do usuário que faz o login
 
+-------------------------------------------------------------------------------
+Para criar a base de dados (mysql), execute o script sql:
+x-LeiaMe/laravelmenugeral.sql
+
