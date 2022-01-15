@@ -1,0 +1,29 @@
+select * from menus m
+INNER join usamenus um on ( um.Menus_id = m.id )
+where 
+um.NivelUsuarios_id = 1 		AND
+um.ativo 		    = true 		AND
+m.ativo				= true
+order by m.idMenuPai, m.ordem
+
+abaixo como fica no eloquent
+
+// 1 = true nos campos ativo
+$menus = DB::table('menus')                  
+		->join('usamenus','usamenus.Menus_id','menus.id')
+		->where('usamenus.NivelUsuarios_id', @$usuarios->nivelUsuarios_id )
+		->where('usamenus.ativo', '1')  
+		->where('menus.ativo', '1')    			  
+		->orderBy('menus.idMenuPai','asc')
+		->orderBy('menus.ordem', 'asc')								
+		->select('*')
+		->get();
+			  
+$produtos = DB::table('products')                  
+              ->join('cores_produto','cores_produto.produto_id','products.id')
+              ->join('grupos_produto','grupos_produto.produto_id','products.id')
+              ->whereIn('cores_produto.cor_id', $c )
+              ->whereIn('grupos_produto.grupo_id', $g)                  
+              ->groupBy('products.id')->orderBy('products.id')
+              ->select('*')
+              ->toSql();

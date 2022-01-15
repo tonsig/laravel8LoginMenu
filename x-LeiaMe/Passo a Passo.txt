@@ -1,0 +1,15 @@
+Criação do projeto
+Obs: considera-se que o composer esteja instalado.
+
+Passo 01
+via cmd, posicionar na pasta desejada e executar o comando abaixo 
+(o processamento pode demorar um pouco - vai dependender da máquina/internet).
+
+composer create-project laravel/laravel --prefer-dist laravelmenugeral
+
+Passo 02
+Após a conclusão bem sucedida do item anterior, uma pasta do projeto é criada com o nome atribuido, nesse caso: laravelmenugeral
+
+
+
+
