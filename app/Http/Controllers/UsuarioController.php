@@ -29,7 +29,7 @@ class UsuarioController extends Controller
 								->where('menus.ativo', '1')    			  
 								->orderBy('menus.idMenuPai','asc')
 								->orderBy('menus.ordem', 'asc')								
-								->select('*')
+								->select('menus.*')
 								->get();
 							
 //								->toSql();   // para ver a frase montada

@@ -17,4 +17,5 @@ use App\Http\Controllers\UsuarioController;
 
 Route::get('/', [HomeController::class, 'home'])->name('home');
 
+Route::get('logout', [UsuarioController::class, 'logout'])->name('usuarios.logout');
 Route::post('painel', [UsuarioController::class, 'login'])->name('usuarios.login');
