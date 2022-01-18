@@ -32,6 +32,7 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
+
 				<form class="login100-form validate-form" method="post" action="{{route('usuarios.login')}}">
 				@csrf	
                     <span class="login100-form-title p-b-43">
@@ -40,7 +41,7 @@
 					
 					
 					<div class="wrap-input100 validate-input" data-validate = "Usuário é um campo obrigatório">
-						<input class="input100" type="text" name="usuario" autocomplete="off">
+						<input class="input100" type="text" name="usuario" autofocus autocomplete="off">
 						<span class="focus-input100"></span>
 						<span class="label-input100">Seu email ou cpf</span>
 					</div>
@@ -73,7 +74,11 @@
 							Enviar
 						</button>
 					</div>
-					
+
+					@if (isset($erroLogin))
+						<div class="alert alert-error text-danger font-weight-bold">{{$erroLogin}}</div>
+					@endif
+
 				</form>
 
 				<div class="login100-more" style="background-image: url('images/bg-01.jpg');">

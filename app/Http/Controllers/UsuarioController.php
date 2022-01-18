@@ -52,8 +52,10 @@ class UsuarioController extends Controller
             
 		}
 		else {
-				echo "<script language='javascript'>alert('Dados Incorretos')</script>";
-				return view('login');
+//				echo "<script language='javascript'>alert('Dados Incorretos')</script>";
+				return view('login', [
+					'erroLogin' => 'Dados Incorretos! Tente novamente.',
+				]);
 			}
     
     }
