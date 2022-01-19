@@ -69,9 +69,9 @@ INDEX UsaMenus_FKIndex2(Menus_id),
 /* popula alguns registros nas tabelas */
 
 INSERT INTO MENUS (titulo, idMenuPai, ordem, rota, icone) VALUES 
-('Cadastros','0','0','','fa fa-bell fa-fw'),
-('Consultas','0','0','','fa fa-bank fa-fw'),
-('Meus Cursos','0','0','','fa fa-history fa-fw'),
+('Cadastros','1','0','','fa fa-bell fa-fw'),
+('Consultas','2','0','','fa fa-bank fa-fw'),
+('Meus Cursos','3','0','','fa fa-history fa-fw'),
 ('Usuarios','1',1,'usuario','fa fa-users fa-fw'),
 ('Alunos','1',2,'aluno','fa fa-eye fa-fw'),
 ('Usuarios','2',1,'usuario','fa fa-users fa-fw'),

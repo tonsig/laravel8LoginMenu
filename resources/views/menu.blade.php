@@ -23,7 +23,7 @@
   </div>
 <!-- Sidebar/menu -->
   <div class="w3-bar-block">
-     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Fechar Menu</a>
     @php $itemPai=0; @endphp
 	  @foreach($menus as $menu)
       @if ($menu->ativo)
