@@ -1,0 +1,52 @@
+INTRUÇÕES PARA QUEM FIZER UM GIT CLONE DO PROJETO
+-------------------------------------------------
+
+1.
+acesse:
+https://github.com/tonsig/laravel8LoginMenu/tree/master
+e faça CODE/download zip  
+-------------------------------------------------
+
+2.
+descompacte o arquivo
+-------------------------------------------------
+
+3. Posicionar-se na pasta do projeto
+
+cd laravel8LoginMenu-master
+-------------------------------------------------
+
+4.
+(considerando que já tenha o composer instalado ...isso pode demorar um pouco).
+No cmd ou terminal do vs, dentro da pasta do projeto:
+composer install                 
+-------------------------------------------------
+
+5. 
+Ver o conteudo da pasta: x-LeiaMe
+pegar o arquivo laravelmenugeral.sql 
+e executar no phpmyadmim para criação da base de dados
+-------------------------------------------------
+
+6.
+fazer cópia o .env.example para .env
+
+em seguida gerar o app_key no cmd (ou terminal do vs):
+php artisan key:generate
+--------------------------------------------------
+
+7.
+depois editar .env e alterar o abaixo, conforme seu ambiente:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravelmenugeral
+DB_USERNAME=seu_usuario_do_banco
+DB_PASSWORD=sua_senha_do_banco
+
+
+
+
+
+

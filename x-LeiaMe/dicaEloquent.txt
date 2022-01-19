@@ -1,3 +1,7 @@
+// PODE IGNORAR ESSE ARQUIVO
+// SÃO APENAS ANOTAÇÕES DE ESTUDO
+
+
 select * from menus m
 INNER join usamenus um on ( um.Menus_id = m.id )
 where 
