@@ -18,7 +18,7 @@
     </div>
   </div>
   <hr>
-  <div class="w3-container">
+  <div class="w3-container w3-pale-blue">
     <h5>Menu</h5>
   </div>
 <!-- Sidebar/menu -->
@@ -29,16 +29,16 @@
       @if ($menu->ativo)
             @if ( ($itemPai != 0) && ($itemPai != $menu->idMenuPai) )
                    </div></div>
-                   <span class="w3-white"><br><br></span>
+                   <span class="w3-white"><br></span>
                   @php $itemPai=0; @endphp		
             @endif
             @if ( ($menu->id) == ($menu->idMenuPai) )
                   @php $itemPai=$menu->idMenuPai; @endphp
                   <div class="w3-dropdown-hover"> 
-                        <button class="w3-bar-item w3-button w3-padding w3-pale-blue">
+                        <button class="w3-bar-item w3-button w3-padding w3-pale-blue expandivel">
                           <i class="{{$menu->icone}}"></i>{{$menu->titulo}}&ensp;<i class="fa fa-caret-down"></i>
                         </button>		 
-                  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                  <div class="w3-dropdown-content w3-bar-block w3-card-4 contentexp">
             @else
                 <a href="{{ $menu->rota }}" class="w3-bar-item w3-button w3-padding">
                 <i class="{{$menu->icone}}"></i>{{ $menu->titulo }}</a>
